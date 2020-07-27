@@ -9,9 +9,13 @@
 
 
 ### 二、设置账号COOKIE
-先登录B站，然后访问https://api.live.bilibili.com/sign/GetSignInfo，按***F12***，在***Console***中输入***document.cookie***，复制结果（不含引号）。
+先登录B站，然后访问https://api.live.bilibili.com/sign/GetSignInfo，按***F12***，在***Network***中刷新
 
-![image-20200727143957069](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200727143957069.png)
+![image-20200727150526051](https://i.loli.net/2020/07/27/zSFRqjIr4B8OEgh.png)
+
+复制***cookie***中的内容，从***sid***开始至***infoc***（可能有所不同）
+
+
 
 在***GitHub***中添加名为 **COOKIE**的变量，值为复制的内容。
 
