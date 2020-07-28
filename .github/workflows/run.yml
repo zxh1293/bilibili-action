@@ -23,6 +23,7 @@ jobs:
         python-version: 3.7
     - name: 签到
       run: |
+        pip install -r requirements.txt
         string="${{ secrets.COOKIE }}"
         IFS="#"
         array=($string)
