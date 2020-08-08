@@ -33,7 +33,7 @@ def main ():
     response=s.get (url1,headers=headers)
     dec=json.loads (response.text)
     if dec ['data']['status']==1:
-        print ("已签到！\n 签到奖励："+dec ['data']['text']+"\n"+dec ['data']['specialText']+"\n")
+        print ("已签到！\n签到奖励："+dec ['data']['text']+"\n"+dec ['data']['specialText']+"\n")
     else:
         if dec ['data']['status']==-101:
             print ("失败！请检查 Cookie 是否过期！\n")
